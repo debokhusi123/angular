@@ -1,13 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Hello {{ title|uppercase }}!
-  </h1>
-  <h4>{{name}} is learning angular</h4> 
-</div>
-<div id="header">
-<h5>Number addition</h5>
-  {{(num1+num2)|currency:'INR'}}
-  <h5>Current Date</h5>
-  {{displayDate()}}
-</div>
+<div id="id">
+  <h1 style="color:pink"item-width="100px"><marquee> 
+    Hello{{title}}
+  </marquee></h1>
+  </div>
+  <div id="id1">
+  <h2>Number Addition:{{num1+num2}}</h2>
+  <h4>
+    NUM1:<input type="number" min="0" max="10" [(ngModel)]="num1"><br><br>
+    NUM2:<input type="number" min="0" max="10" [(ngModel)]="num2"><br><br>
+    <button (click)="sum()">Add</button><br></h4>
+<h2><b>Sum:{{total}}
+
+</b>
+</h2>
+  </div>

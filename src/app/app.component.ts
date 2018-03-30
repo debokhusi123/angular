@@ -1,17 +1,19 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-cts',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'Angular Study';
-  name='deboleena'
-  num1=15;
-  num2=13;
-  displayDate=function()
+ 
+  num1=0;
+  num2=0;
+  total=0;
+  sum=function()
   {
-    return new Date();
+    this.total=this.num1+this.num2;
+        return this.total;
   }
 }
